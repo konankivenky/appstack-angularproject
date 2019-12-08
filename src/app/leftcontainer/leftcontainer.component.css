@@ -1,0 +1,22 @@
+.fontawesome{
+    font-size: 20px;
+}
+.awesome{
+    font-size: 10px;
+}
+.auth{
+    width: 40px;
+
+}
+.auths{
+    width: 50px;
+}
+.navbarpic{
+    max-width: 70px;
+    max-height: 70px;
+}
+li{
+    list-style: none;
+    font-size: 14px;
+    padding: 8px;
+}

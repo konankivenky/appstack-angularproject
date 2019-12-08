@@ -1,0 +1,175 @@
+<div class="container">
+    <div class="row p-4">
+        <div class="col-md-3">
+            <div class="card">
+                <div class="card-body">
+                    <div class="card-text d-flex align-items-center">
+                            <i class="fa fa-shopping-cart awesomesize text-info" aria-hidden="true"></i>
+                            <div class="ml-3">
+                                <h5>2.567</h5>
+                                <span>Sales Today </span>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+                <div class="card">
+                        <div class="card-body">
+                            <div class="card-text d-flex align-items-center">
+                                    <i class="fa fa-google-wallet awesomesize text-warning" aria-hidden="true"></i>
+                                    <div class="ml-3">
+                                        <h5>17.727</h5>
+                                        <span>Visitors Today </span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+
+        </div>
+        <div class="col-md-3">
+
+                <div class="card">
+                        <div class="card-body">
+                            <div class="card-text d-flex align-items-center">
+                                    <i class="fa fa-usd awesomesize text-success" aria-hidden="true"></i>
+                                    <div class="ml-3">
+                                        <h5>24.320</h5>
+                                        <span>Total Earnings</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+        </div>
+        <div class="col-md-3">
+            
+                <div class="card">
+                        <div class="card-body">
+                            <div class="card-text d-flex align-items-center">
+                                    <i  class="fa fa-shopping-bag awesomesize text-danger" aria-hidden="true"></i>
+                                    <div class="ml-3">
+                                        <h5>34</h5>
+                                        <span>Pending Orders</span>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>  
+
+        </div>
+    </div>
+    
+    <div class="row p-4">
+        <div class="col-md-8">
+            <table class="table table-striped">
+                <thead class="bg-primary text-white">
+                    <tr>
+                        <th>Id</th>
+                        <th>NAME</th>
+                        <th>EMAIL</th>
+                        <th>ADDRESS</th>
+                    
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let user of dashboard">
+                        <td>{{user.id}}</td>
+                        <td>{{user.name}}</td>
+                        <td>{{user.email}}</td>
+                        <td>{{user.address.city}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header d-flex justify-content-between  bg-transparent border-white">
+                    <h6>Daily</h6>
+                    <button class="btn btn-primary Dailybutton btn-sm">Today</button>
+                </div>
+                <div class="card-body">
+                    <div class="card-text">
+                            <div class="list-unstyled">
+                                    <div class="media">
+                                            <img   class="rounded-circle navbarpic w-25 mr-1" src="https://scontent.fhyd5-1.fna.fbcdn.net/v/t1.0-9/37600691_201772800494658_5101120945083383808_n.jpg?_nc_cat=107&_nc_oc=AQlp4ESJgqSLa2RMY0xs7i8mdCfPSIMG6ofxEGW0Y3lXqMfhci1Ef8GqJ97KWjdepSA&_nc_ht=scontent.fhyd5-1.fna&oh=696c69ef9e45f87bbaec7ce1f2fcfc69&oe=5E8856D3 " alt="...">
+                                      <div class="media-body d-flex justify-content-between">
+                                          <div class="">
+                                                <div class="mt-0 mb-1">Ashley Briggs started following Stacie Hall</div>
+                                                <small>Today 7:50pm</small>
+                                          </div>
+                                       <small>5minago</small>
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media my-4">
+                                            <img   class="rounded-circle navbarpic w-25 mr-1" src="https://scontent.fhyd5-1.fna.fbcdn.net/v/t1.0-9/37600691_201772800494658_5101120945083383808_n.jpg?_nc_cat=107&_nc_oc=AQlp4ESJgqSLa2RMY0xs7i8mdCfPSIMG6ofxEGW0Y3lXqMfhci1Ef8GqJ97KWjdepSA&_nc_ht=scontent.fhyd5-1.fna&oh=696c69ef9e45f87bbaec7ce1f2fcfc69&oe=5E8856D3 " alt="...">
+                                      <div class="media-body d-flex justify-content-between">
+                                          <div class="">
+                                                <span class="mt-0 mb-1">Chris Wood posted something on Stacie Hall's timeline</span>
+                                                <small>Today 7:50pm</small>
+                                                <div class="card">
+                                                        <div class="card-text" style="font-size:13px">
+                                                                Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing...
+                                                        </div>
+                                                </div>
+                                               
+                                          </div>
+                                       <small>30minago</small>
+                                        
+                                      </div>
+                                    </div>
+                                    <hr>
+                                    <div class="media">
+                                            <img   class="rounded-circle navbarpic w-25 mr-1" src="https://scontent.fhyd5-1.fna.fbcdn.net/v/t1.0-9/37600691_201772800494658_5101120945083383808_n.jpg?_nc_cat=107&_nc_oc=AQlp4ESJgqSLa2RMY0xs7i8mdCfPSIMG6ofxEGW0Y3lXqMfhci1Ef8GqJ97KWjdepSA&_nc_ht=scontent.fhyd5-1.fna&oh=696c69ef9e45f87bbaec7ce1f2fcfc69&oe=5E8856D3 " alt="...">
+                                      <div class="media-body d-flex justify-content-between ">
+                                          <div class="">
+                                                <div class="mt-0 mb-1">Stacie Hall posted a new blog</div>
+                                                <small>Today 7:50pm</small>
+                                          </div>
+                                        
+                                       </div>
+                                       <small>1hr</small>
+                                    </div>
+                                    <hr>
+                                    <button class="btn btn-block btn-info">Load more</button>
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-8 ">
+                
+                        <table class="table">
+                            <thead class="bg-success text-white">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>USER NAME</th>
+                                    <th>EMAIL</th>
+                                
+                                    <th>ADDRESS</th>
+                                    
+                                
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let user of dashboard">
+                                    <td>{{user.id}}</td>
+                                    <td>{{user.username}}</td>
+                                    <td>{{user.email}}</td>
+                                   
+                                    <td>{{user.address.city}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                
+        </div>
+        <div class="col-md-4">
+           <ul class="list-group" *ngFor="let user of dashboard">
+                <li class="list-group-item pt-3"><span class="text-info">Email:</span>  {{user.email}}</li>
+            </ul>
+        </div>
+    </div>
+    
+</div>

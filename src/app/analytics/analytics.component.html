@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="row p-4">
+        <div class="col-md-5">
+            <div class="row mt-4 ">
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between bg-transparent">
+                            <span>Visitors</span>
+                            <span class="badge-info badge text-white">Today</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h1>56.534</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between bg-transparent">
+                            <span>VBounce</span>
+                            <span class="badge badge-warning text-white"> annual</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h1>534.4</h1>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+
+            <div class="row mt-5 ">
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between bg-transparent">
+                            <span>Real-Time</span>
+                            <span class="badge-primary badge text-white">monthly</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h1>12.343</h1>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card ">
+                        <div class="card-header d-flex justify-content-between bg-transparent">
+                            <span>Activity</span>
+                            <span class="badge badge-success text-white"> yearly</span>
+                        </div>
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <h1>534.4</h1>
+                        </div>
+                    </div>
+                </div>
+              
+            </div>
+        </div>
+        <div class="col-md-7">
+            <img class="rounded-radius w-100 h-100" src="https://images.pexels.com/photos/946343/pexels-photo-946343.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+           
+        </div>
+
+    </div>
+    <div class="p-4">
+            <table class="table table-borderless p-0 m-0">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>NAME</th>
+                            <th>USER NAME</th>
+                            <th>EMAIL</th>
+                            <th>PHONE</th>
+                            <th>ADDRESS</th>
+                            
+                        
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let user of analyticss">
+                            <td>{{user.id}}</td>
+                            <td>{{user.name}}</td>
+                            <td>{{user.username}}</td>
+                            <td>{{user.email}}</td>
+                           <td>{{user.phone}}</td>
+                            <td>{{user.address.city}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+    </div>
+</div>

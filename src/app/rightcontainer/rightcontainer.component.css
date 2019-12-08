@@ -1,0 +1,19 @@
+.naviconbar{
+  width: 43px;
+  height: 43px;
+}
+.navbarpic{
+    width: 25px;
+    height: 25px;
+}
+.fontawesome{
+    font-size: 25px;
+}
+.navdrop{
+    position: relative;
+     right: 65px ;
+}
+.navbadge{
+    position: relative;
+    right: 10px;
+}
